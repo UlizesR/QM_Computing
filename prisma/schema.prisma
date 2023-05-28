@@ -17,7 +17,6 @@ model User {
   password      String
   createdAt     DateTime @default(now())
   Chats         Chat[]
-  Messages      Message[]
 }
 
 model Chat {
@@ -33,9 +32,8 @@ model Chat {
 model Message {
   id            Int      @id @default(autoincrement())
   text          String
+  author        String
   createdAt     DateTime @default(now())
   chat          Chat     @relation(fields: [chatId], references: [id])
   chatId        Int
-  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  userId        Int
 }
