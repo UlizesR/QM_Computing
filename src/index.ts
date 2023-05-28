@@ -18,9 +18,9 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use('/api/users', userRouter);
-app.use('/api/chats', chatRouter);
-app.use('/api/messages', messageRouter);
+app.use('/users', userRouter);
+app.use('/chats', chatRouter);
+app.use('/messages', messageRouter);
 
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
