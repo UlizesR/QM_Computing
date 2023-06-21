@@ -9,7 +9,7 @@ export interface ButtonProps {
 
 const MainButton = (props: ButtonProps) => {
   return (
-    <button className='button'>
+    <button className='button' onClick={props.onClick}>
       {props.text}
     </button>
   )
