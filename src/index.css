@@ -19,7 +19,7 @@
 }
 
 .mesh-sidebar {
-    @apply top-0 fixed z-20 flex flex-col flex-none items-center w-12 left-[300px]
+    @apply top-0 fixed z-20 flex flex-none items-center w-12
 }
 
 .gallery-div {
